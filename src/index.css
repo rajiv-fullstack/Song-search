@@ -1,0 +1,23 @@
+div.container.children {
+  margin-bottom: 75px;
+}
+@media print {
+  .hideinprint, footer, p.read-more { display: none; }
+  blockquote { border: 0; }
+
+  /* Undo what bootstrap forced upon us */
+  a[href]:after {
+    content: "";
+  }
+}
+.mobileview {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .mobileview {
+    display: block;
+  }
+  .deskview {
+    display: none;
+}
+}

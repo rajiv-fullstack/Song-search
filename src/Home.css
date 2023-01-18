@@ -1,0 +1,278 @@
+input[type="search"]:focus {
+  border-color: #827b6f;
+}
+
+.examples {
+  margin-top: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.examples ul {
+  padding-left: 30px;
+  list-style-image: url(./static/bullet.png);
+}
+.examples li {
+  margin-bottom: 14px;
+}
+
+.examples a {
+}
+
+.examples i {
+  color: rgb(74, 74, 74);
+}
+.examples .opened {
+  display: block;
+  font-size: 90%;
+}
+
+span.help-block.toggles button {
+  margin-left: 5px;
+}
+span.help-block.toggles,
+span.help-block.advanced-search-status,
+span.help-block.maxlength {
+  text-align: right;
+}
+span.help-block.advanced-search-status {
+  color: #000;
+}
+span.help-block.maxlength.danger {
+  color: #a94442;
+}
+
+span.help-block.advanced a {
+  text-decoration: none;
+}
+
+.by-name ul {
+  padding-left: 30px;
+  list-style-image: url(./static/bullet.png);
+}
+
+.recent-comments .comment img,
+.result .head img {
+  width: 100px;
+  transform: scale(1);
+  transition: all 0.1s ease-out;
+}
+.recent-comments .comment img.found:hover,
+.result .head img.album:hover,
+.result .head img.artist:hover {
+  transform: scale(1.5);
+  transform-origin: right top;
+  z-index: 1000;
+}
+.result .head h2 code {
+  font-size: 11px;
+}
+
+.results .result {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result .fragments {
+  font-style: italic;
+}
+.result .text h3 {
+  margin-top: 25px;
+}
+.result .year {
+  font-size: 70%;
+  color: #666;
+}
+.result blockquote p b {
+  background-color: #fff78a;
+}
+.result.collapsed {
+  max-height: 350px;
+  /*overflow: auto;*/
+  position: relative;
+  overflow: hidden;
+}
+.result.collapsed blockquote {
+  max-height: 300px;
+  overflow: hidden;
+}
+.result.collapsed .read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 50px 0 15px 0;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: -moz-linear-gradient(top, transparent, white);
+  background-image: linear-gradient(to bottom, transparent, white);
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.2),
+    white
+  );
+}
+.result.collapsed .read-more a:last-child {
+  margin-left: 3px;
+}
+
+.result.collapsed .read-more a,
+.load-more a {
+  background-color: #fff;
+  padding: 8px 14px 8px 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.28571429rem;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  text-transform: uppercase;
+}
+
+.load-more {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+}
+
+table.suggestions tr.not-highlighted {
+  text-decoration: line-through;
+}
+table.suggestions tr.not-highlighted td {
+  background-color: #ccc;
+}
+
+table.suggestions tr.highlighted {
+  font-weight: bold;
+}
+table.suggestions td.suggestion-length {
+  text-align: right;
+}
+
+table.suggestions tr.highlighted td span.badge {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 80%;
+  margin-left: 10px;
+}
+table.suggestions td a {
+  font-weight: bold;
+}
+
+.slow-search,
+.search-error {
+  margin: 50px 0;
+  text-align: center;
+}
+.search-error {
+  color: red;
+}
+
+ul.albums {
+  padding-left: 0;
+  text-transform: capitalize;
+}
+
+ul.albums > li {
+  display: inline;
+}
+
+ul.albums > li:before {
+  content: ",\0000a0"; /* Non-breaking space */
+}
+ul.albums > li:first-child:before {
+  content: normal;
+}
+
+.amazon-iframe-outer {
+  float: right;
+}
+
+ul.song-links {
+  padding-left: 0px;
+  margin: 25px 0 10px 0;
+  font-size: 110%;
+}
+ul.song-links li {
+  background: url(./static/bullet.png) no-repeat left center;
+  padding: 0px 0px 6px 30px;
+  list-style: none;
+  margin: 0;
+}
+ul.song-links li.itunes {
+  background-image: url(./static/itunes-bullet.png);
+}
+ul.song-links li.amazon {
+  background-image: url(./static/amazon-bullet.png);
+}
+
+.autocomplete {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+  opacity: 0.97;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.autocomplete ul li p.search {
+  font-weight: bold;
+  margin: 4px;
+}
+.autocomplete ul li p.search small {
+  font-weight: normal;
+}
+.autocomplete mark {
+  font-weight: normal;
+}
+
+.autocomplete ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.autocomplete ul li {
+  border-bottom: 1px solid #efefef;
+  padding: 6px;
+}
+.autocomplete ul li:last-child {
+  border-bottom: none;
+}
+
+.autocomplete .active {
+  background-color: #efefef;
+}
+
+.autocomplete li {
+  cursor: pointer;
+}
+.autocomplete li .artist-name {
+  margin: 0 0 3px 0;
+}
+.autocomplete li .artist-metadata {
+  opacity: 0.7;
+}
+.autocomplete li mark {
+  padding-right: 0;
+}
+
+.autocomplete li img {
+  width: 40px;
+}
+
+.autocomplete .autocomplete-suggestion-song p {
+  font-weight: normal;
+  font-size: 90%;
+  margin-bottom: 5px;
+}
+
+.autocomplete li.search-suggestion {
+  padding: 10px;
+}
+
+.autocomplete p.search small {
+  float: right;
+}

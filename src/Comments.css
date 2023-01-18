@@ -1,0 +1,64 @@
+.comments form {
+  margin-bottom: 30px;
+}
+
+.comments .comment {
+  margin-top: 20px;
+  padding: 0;
+}
+.comment .display {
+  padding: 2px 5px;
+}
+.comment .comments .comment {
+  margin-top: 2px;
+}
+div#primisPlayerContainerDiv {
+  width: 43%;
+  margin: auto;
+}
+.comment p.buttons {
+  margin: 0;
+}
+
+.comment .highlit {
+  background-color: #feffdd;
+  border-radius: 2px;
+}
+
+.comment h5 {
+  margin-bottom: 0;
+}
+
+.comment .meta {
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+.comment .meta small {
+  color: red;
+  margin-left: 10px;
+}
+
+.comment p.buttons {
+  float: right;
+}
+
+.comment .comments {
+  margin-left: 20px;
+}
+
+.comment form {
+  margin-left: 20px;
+}
+
+.comment blockquote {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.song-comments form {
+  margin-top: 50px;
+}
+
+.song-comments .comment form {
+  margin-top: 5px;
+}
